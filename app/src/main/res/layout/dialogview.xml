@@ -1,0 +1,61 @@
+<!-- res/layout/custom_dialog_layout.xml -->
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/line1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_gravity="center_horizontal"
+    android:background="@drawable/dialog_background">
+
+    <TextView
+        android:id="@+id/dialog_title"
+        android:layout_width="wrap_content"
+        android:layout_height="46dp"
+        android:text="声明与条款"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:textSize="18sp"
+        android:textColor="@android:color/black"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <TextView
+        android:id="@+id/dialog_detail"
+        android:layout_width="wrap_content"
+        android:layout_height="98dp"
+        android:text="欢迎使用 iH微博，我们将严格遵守相关法律法规和隐私政策保护您的个人隐私。请您阅读并同意《用户协议》与《隐私政策》"
+        android:layout_gravity="center"
+        android:textSize="14sp"
+        android:textColor="@android:color/black"
+        app:layout_constraintTop_toBottomOf="@+id/dialog_title"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:padding="8dp"/>
+    <TextView
+        android:id="@+id/no_text"
+        android:layout_width="268dp"
+        android:layout_height="44dp"
+        android:text="不同意"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textSize="14dp"
+        android:textColor="#C0C0C0"
+        app:layout_constraintTop_toBottomOf="@+id/dialog_detail"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+    <TextView
+        android:id="@+id/yes_text"
+        android:layout_width="268dp"
+        android:layout_height="52dp"
+        android:gravity="center"
+        android:text="同意并使用"
+        android:layout_gravity="center"
+        android:textSize="16dp"
+        android:textColor="@color/white"
+        android:background="#0D84FF"
+        app:layout_constraintTop_toBottomOf="@+id/no_text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
